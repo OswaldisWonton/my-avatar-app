@@ -1,11 +1,9 @@
 --extra-index-url https://mirrors.aliyun.com/pypi/simple/
---find-links https://github.com/jkjung-avt/dlib-builds/releases/tag/v19.24
 
 dlib==19.10
 streamlit==1.39.0
-torch==2.0.1
+torch==2.2.0
 opencv-python-headless==4.7.0.72
+facenet-pytorch==2.5.2
 face-recognition==1.3.0
-facenet-pytorch==2.6.0
-pygame==2.6.1
-tqdm==4.66.5
+tqdm==4.66.1
