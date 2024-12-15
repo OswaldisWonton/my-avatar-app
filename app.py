@@ -4,7 +4,6 @@ import numpy as np
 import random
 from utils.face_utils import FaceComparison
 from utils.video_display import video_display, get_video_list
-from utils.music_playing import MusicPlayer
 
 try:
     from utils.face_utils import FaceComparison
@@ -57,11 +56,6 @@ if uploaded_file is not None:
         # 选择对应的视频和音乐文件
         video_dict = get_video_list("videos")
         video_path = random.choice(video_dict[face_label])
-        music_path = f'music/{face_label}.mp3'
 
         # 播放视频
         st.video(video_path)
-
-        # 播放音乐
-        st.audio(music_path)
-
